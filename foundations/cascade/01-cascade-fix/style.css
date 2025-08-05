@@ -2,34 +2,39 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.para,
-.small-para {
+.para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
+  font-size: 22px;
 }
 
-.small-para {
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
+/* 
 
-.confirm {
+multiple classes = chaining (.btn.cance) class="btn cancel"
+descendant  = with space ( .btn .cancel) class= "btn" (parent) class ="cancel" (child)
+
+also if there is descendant your type selector no need for (.)
+
+*/
+
+.button.confirm{
   background: green;
   color: white;
   font-weight: bold;
 } 
 
-.button {
+.button .cancel {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
